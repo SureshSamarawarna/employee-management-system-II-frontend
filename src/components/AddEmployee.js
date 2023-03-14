@@ -6,7 +6,7 @@ const AddEmployee = () => {
         id:"",
         firstName:"",
         lastName:"",
-        emailId:""
+        email:""
     });
     const handleChange = (e) =>{
         const value = e.target.value;
@@ -49,7 +49,7 @@ const AddEmployee = () => {
                 <label className='block text-gray-600 text-sm font-normal'>Email</label>
                 <input type="email" 
                 name='email'
-                value={employee.emailId}
+                value={employee.email}
                 onChange={(e) => handleChange(e)}
                 className='h-10 w-96 border mt-2 px-2 py-2'></input>
             </div>
